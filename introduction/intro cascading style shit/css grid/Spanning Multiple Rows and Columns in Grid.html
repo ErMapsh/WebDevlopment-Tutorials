@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNapping multiople row/title>
+    <style>
+        #container {
+            display: grid;
+            grid-column-gap: 5rem;
+            grid-row-gap: 0rem;
+            grid-template-columns: repeat(4, 1fr );
+            /* grid-template-rows: repeat( 1 ,4fr); */
+        }
+
+        .box {
+            /* width: 100px; */
+            /* height: 100px; */
+            margin: 10px;
+            background-color: tomato;
+            border: 3px solid black;
+            padding: 14px 10px;
+        }
+
+        .box:first-child{
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+
+            /* shorthand poperty */
+            /* grid-column: 1  / span 2;
+            grid-row: 1 /span 2;*/
+            grid-row: 1 /span 2 ;
+            grid-column: 2  / span 2;
+        } 
+
+    
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box">this is a item-1</div>
+        <div class="box">this is a item-2</div>
+        <div class="box">this is a item-3</div>
+        <div class="box">this is a item-4</div>
+        <div class="box">this is a item-5</div>
+        <div class="box">this is a item-6</div>
+        <div class="box">this is a item-7</div>
+        <div class="box">this is a item-8</div>
+        <div class="box">this is a item-9</div>
+        <div class="box">this is a item-1</div>
+        <div class="box">this is a item-2</div>
+        <div class="box">this is a item-3</div>
+        <div class="box">this is a item-4</div>
+        <div class="box">this is a item-5</div>
+        <div class="box">this is a item-6</div>
+        <div class="box">this is a item-7</div>
+        <div class="box">this is a item-8</div>
+        <div class="box">this is a item-9</div>
+   
+    </div>
+</body>
+
+</html>

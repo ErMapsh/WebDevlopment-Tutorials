@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selecter</title>
+    <style>
+        div p {
+            background-color: yellow;
+        }
+        div > p{
+            background-color: turquoise;
+        }
+
+        div + p{
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Selector</h1>
+        <p>this is a paragraph</p>
+        <div>
+            <ul>
+                <li><p>this is a paragraph in unorder list</p></li>
+            </ul>
+        </div>
+        <p>this is paragraph1</p>
+    </div>
+    <p>this is paragraph2</p>
+</body>
+
+</html>

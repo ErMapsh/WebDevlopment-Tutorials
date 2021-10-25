@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negivation</title>
+    <style>
+        #nagivation {
+            background-color: rgb(0, 0, 0);
+            border-radius: 60px;
+        }
+        #nagivation ul li {
+            list-style: none;
+            float: left;
+            padding: 13px 61px;
+            margin: 3px 18px;
+        }
+        #nagivation ul li:hover {
+            background-color: rgb(56, 57, 58);
+        }
+        #nagivation ul {
+            overflow: auto;
+            /* background-color of neg was remove thats why use this              */
+        }
+        #nagivation ul li a {
+            color: rgb(255, 246, 246);
+            text-decoration: none;
+        }
+        #nagivation ul li a:hover {
+            text-decoration: underline;
+        }
+        #search {
+            padding: 9px 13px;
+            border-radius: 20px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav id="nagivation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Log in</a></li>
+                <div id="search">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+        <img style="size:unset;" src="https://source.unsplash.com/collection/190727/1600x900" sizes="900px 500px">
+    </div>
+</body>
+</html>

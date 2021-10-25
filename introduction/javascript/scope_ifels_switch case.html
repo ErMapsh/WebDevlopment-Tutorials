@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, If-else Conditionals & Switch Case</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>GO to console</li>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+            <li>item-8</li>
+            <li>item-9</li>
+        </ul>
+    </div>
+    <script>
+
+        //SCOPE 
+
+        // let a = 'ErMapsh';
+        // {
+        //     let a = 'xMapsh';
+        //     console.log(a);
+
+        // }
+        // console.log(a);
+
+
+
+        //CONSTANT
+
+        // const b = "this is can't change";
+        // // b = " i want to change the constant but constant not change anymore even your gf will change but constant var never change.he throw error";
+        // console.log(b);
+
+        //CONDITIONAL
+
+        // let age = 56;
+
+        // if (age > 18) {
+        //     console.log('You are Mature');
+        // }
+        // else if (age == 2) {
+        //     console.log('you are little baby..');
+        // }
+
+        // else {
+        //     console.log('You are not Mature');
+        // }
+
+        //Switch case Statement
+        // const mouse_dpi = 400;
+        let mouse_dpi = prompt("Enter Your Dpi:")
+        switch (mouse_dpi) {
+            case 400:
+                console.log('my favourite dpi setting is 400 and i compatiable with this....');
+                break;
+            case 800:
+                console.log('i m not compatiable with 800 but i will try');
+                break;
+            case 1200:
+                console.log('i m not compatiable with 1200 but i will try');
+                break;
+            case 4000:
+                console.log('dpi 4000 setting is very high and i not compatiable with this ');
+                break;
+        
+            default:
+                console.log('You conmpatiable with 800 dpi, do not change your dpi setting');
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

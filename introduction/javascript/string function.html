@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+</head>
+
+<body>
+    <h1>go to console in developer mode</h1>
+    <script>
+        var str = 'This is my string fuction ... '
+        console.log(str);
+
+
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // first occurance of substring
+        console.log(`Index of 'is' start from:${str.indexOf('is')}`);
+
+        //last occurance of substring 
+        console.log(`Index of 'is' last from:${str.lastIndexOf('is')}`);
+
+        //    substring from substring
+        console.log(str[3])
+        console.log(`slicing of string: ${str.slice(5, 11)}`)  //getting also negative value
+        console.log(`substing from string: ${str.substring(5, 11)}`)// not getting negative value as same work slice function
+        console.log(`substing from string: ${str.substr(2, 10)}`) //starting from beginning position
+        console.log(`replace the word in string: ${str.replace('string', 'ErMapsh')}`) //starting from beginning position
+
+        // uppercase and lowercase
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+
+        //concat string
+        console.log(str.concat('this is a concat string'))//also lilke plus operator
+
+        // remove white space
+        var whitespace_string = "    this is  a   white space string  "; //remove spaces from right and left side not in middle
+        console.log(whitespace_string.trim())
+
+
+        //char at index point
+        console.log("which character was in string at index point", str.charAt(5))
+        console.log("which character was in string at index point", str.charCodeAt(6))//not very important
+
+    </script>
+</body>
+
+</html>

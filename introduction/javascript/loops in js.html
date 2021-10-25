@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about Loops</title>
+</head>
+<body>
+    <h1>go to console</h1>
+    <script>
+        console.log("This is about loops");
+
+        let needs= ['pen', 'book', 'pencil', 'pendrive'];
+        // for (let item=0; item < items.length; item++){
+        //     console.log(needs[item]);
+        // }
+
+        // in morder js u can write for loop like this, its work like for loop
+        // needs.forEach(element => {
+        //     console.log("this is morden method of javascript"+element);
+        // });
+        
+        //using for element method like for loop 
+        for (element of needs){
+            console.log("this is second morden method of javascript "+element);
+        }
+
+
+
+        //how to access dict/object using for loop
+
+        // student = {
+        //     name : 'ErMapsh',
+        //     profession: 'Er',
+        //     hoobies : 'Gaming'
+        // }
+
+        // for (key in student){
+        //     console.log(`${key} and ${student[key]}`);
+        // }
+
+
+        //while loop
+        let startno = 1;
+
+        while(startno<5){
+            console.log(`${startno} is less than 5 `);
+            startno++;
+        }
+
+        // do while loop
+        let no=1
+        do{
+            console.log('your no is '+ no);
+            no++;
+        }while(no<5)
+    </script>
+</body>
+</html>

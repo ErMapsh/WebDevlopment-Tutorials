@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        
+
+        .box {
+            background-color: rgb(233, 230, 230);
+            border: 2px solid red;
+            padding: 14px;
+            margin: 14px;
+
+
+        }
+
+        #container {
+
+            display: flex;
+            /* border: 2px dotted red;  */
+        }
+
+        /* syntax- box-shadow: x-offset y-offset blur_value spread_value */
+        /* syntax- text-shadow:  x-offset y-offset blur_value */
+        #box1 {
+            box-shadow: 14px 14px green;
+            text-shadow: -2px 0px 4px 4px red ;
+        }
+
+        #box2 {
+            box-shadow: 14px 14px 13px green;
+        }
+
+        #box3 {
+            box-shadow: 14px 14px 13px 12px green;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="box1" class="box"><h1>here is use text shadow</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, velit unde provident
+            consequatur necessitatibus facere!</div>
+        <div id="box2" class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, velit unde provident
+            consequatur necessitatibus facere!</div>
+        <div id="box3" class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, velit unde provident
+            consequatur necessitatibus facere!</div>
+    </div>
+
+</body>
+
+</html>

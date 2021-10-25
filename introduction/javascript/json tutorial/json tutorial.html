@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        <p>this is my container</p>
+    </div>
+
+    <script>
+        let jsonObj = {
+            name: 'ErMapsh',
+            Proffestion: "Er",
+            food: "bendi"
+        }
+        console.log(jsonObj);//json object
+
+        //make object into string
+        let jsonObjStr = JSON.stringify(jsonObj);
+        console.log(jsonObjStr);
+
+        //we can apply multiple thing on string but not on object
+        let jsonObjStrReplace = jsonObjStr.replace("bendi", 'Potato');
+        console.log(jsonObjStrReplace);
+
+        //make a string into object
+        let newJsonObj = JSON.parse(jsonObjStrReplace);
+        console.log(newJsonObj);
+    </script>   
+</body>
+</html>

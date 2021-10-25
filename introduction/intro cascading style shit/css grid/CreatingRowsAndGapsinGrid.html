@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Rows & Gaps in Grid</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+        }
+        #container{
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-template-rows: 1fr 1fr 4fr; */
+            /* grid-auto-rows: 2fr; */
+            /* grid-template-columns: 1fr 4fr 1fr; */
+            /* grid-template-rows: repeat(1,1fr 3fr 1fr); */
+            grid-template-columns: 19% 60% 18.8%;
+            grid-template-rows:  100% 600% 300%;
+          
+            grid-template-areas: '';
+        }
+        .box{
+            background-color: tomato;
+            /* margin: 14px; */
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box">this is my item-1</div>
+        <div class="box">this is my item-2</div>
+        <div class="box">this is my item-3</div>
+        <div class="box">this is my item-4</div>
+        <div class="box">this is my item-5</div>
+        <div class="box">this is my item-6</div>
+        <div class="box">this is my item-7</div>
+        <div class="box">this is my item-8</div>
+        <div class="box">this is my item-9</div>
+        
+        
+    </div>
+</body>
+</html>

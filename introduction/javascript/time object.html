@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript date time</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <style>
+        * {
+            background-color: black;
+        }
+
+        #para {
+            color: white;
+            text-align: center;
+            font-size: 34px;
+            font-family: 'Zen Dots', cursive;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p id="para"></p>
+    <script>
+        //we can use date time in live page 
+        //   function display_time() {
+        //     let time = new Date();
+        //     let object_to_string = String(time);
+        //     // console.log(object_to_string.slice(0, 33));
+        //     document.getElementById('para').innerHTML = object_to_string.slice(0, 33);
+        // }
+        // setInterval(display_time, 1000);
+
+
+        // another way to write
+
+        let dt = new Date();
+        console.log('new Date(): ', dt);
+
+        let dt1 = new Date(1000);//its a reference: Thu Jan 01 1970 05:30:00 GMT+0530 (India Standard Time) and argument is a how may times u want after from reference time
+        console.log('new Date(1000):',dt1);
+
+        let dt2 = new Date('2022-09-12');
+        console.log("new Date('2022-09-12'):",dt2);
+
+        // let dt3 = new Date(year month date hour minute second millisecond);
+        let dt3 = new Date(3000 , 09, 12, 00, 00 , 00, 00);
+        console.log("new Date(year month date hour minute second millisecond):",dt3);
+
+
+        let year  = dt.getFullYear();
+        console.log("The year is",year);
+
+        let month  = dt.getMonth();
+        console.log("The month is",month);
+        
+        let date  = dt.getDate();
+        console.log("The date is",date);
+
+        let hour  = dt.getHours();
+        console.log("The hour is", hour);
+
+        let min  = dt.getMinutes();
+        console.log("The minutes is", min);
+
+        // change a date
+        dt.setDate(30);
+        dt.setHours(00);
+        dt.setMonth(04);
+        dt.setFullYear(3000);
+        console.log(dt);
+        
+        //date now is return time stamp from reference time 
+        dt.setMinutes(30);
+        console.log('Date.now() ',Date.now(), 'and changing time', dt);
+
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Transitions in CSS</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+            /* transition syntax: */
+            /* transition-property: background-color;
+            transition-duration: 4s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s; */
+
+            /* shorthand poperty */
+            /* transition: transition-poperty    transition-duration    transition-timing-function   transition-delay  ; */
+            /* transition: background-color 4s ease-in-out 0.2s; */
+ 
+ 
+            /* we want multiple or all transition will-change */
+            transition: all 4s ease-in-out 0.2s;
+        }
+        .box:hover{
+            background-color: white;
+            height: 300px;
+            width: 300px;
+            border-radius: 34px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box">
+            This is my box
+        </div>
+    </div>
+</body>
+</html>

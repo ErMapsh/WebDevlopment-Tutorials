@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    .box {
+        background-color: red;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 3rem;
+        display: none;
+    }
+    @media only screen and (max-width: 500px) {
+        #box-1{
+            display: block;
+        }
+    }
+    @media only screen and (min-width: 501px) and (max-width: 800px){
+        #box-2{
+            display: block;
+            background-color: black;
+        }
+    }
+    @media only screen and (min-width: 800px) and (max-width: 1200px){
+        #box-3{
+            display: block;
+            background-color: blueviolet;
+            
+        }
+    } 
+    @media only screen and (min-width: 1201px) {
+        #box-4{
+            display: block;
+            background-color: cornflowerblue;
+            
+        }
+    }
+</style>
+
+<body>
+    <p>media quries is a method to make website resposive.when u making a website but when website width changes then u
+        want add some css poperty to looking cool website which look great for their appearance </p>
+</body>
+<div class="box" id="box-1">Mai ek iphone hu</div>
+<div class="box" id="box-2">Mai ek Tablet hunn</div>
+<div class="box" id="box-3">mai ek computer hun</div>
+<div class="box" id="box-4">mai ek widescreen hun</div>
+
+
+</body>
+
+</html>

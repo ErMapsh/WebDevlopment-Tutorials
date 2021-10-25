@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating The DOM</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <p>this is a another container</p>
+    </div>
+
+    <script>
+        //get contain by id 
+        let main_container = document.getElementById('main');
+        console.log(main_container);
+
+        let navbar = document.getElementById('nav');
+        console.log(navbar);
+
+        //get contain by class 
+        let container = document.getElementsByClassName('container');
+        console.log(container);
+
+        //select first attempt id or class
+        let select = document.querySelector('.container');//select first class or id/thing
+        let select2 = document.querySelector('#nav');
+        console.log(select);
+        console.log(select2);
+
+
+        let select3 = document.querySelector('#nav>li');
+        console.log(select3);
+        //select all attempt of argument in the querySelectorALL function
+        let sel = document.querySelectorAll('#nav>li');
+        console.log(sel);
+    </script>
+</body>
+</html>

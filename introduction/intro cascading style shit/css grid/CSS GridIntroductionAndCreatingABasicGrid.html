@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Introduction & Creating A Basic Grid</title>
+    <style>
+        #container {
+            display: grid;
+            /* grid-template-columns:140px 140px 140px 140px 140px; */
+            /* grid-template-columns: 140px auto 140px; */
+            /* grid-template-columns: 1fr 4fr 1fr; */
+            grid-template-columns: repeat(10,auto );
+            grid-gap: 3rem;
+        }
+
+        .box {
+            /* width: 100px; */
+            /* height: 100px; */
+            margin: 10px;
+            background-color: tomato;
+            border: 3px solid black;
+            padding: 14px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box">this is a item-1</div>
+        <div class="box">this is a item-2</div>
+        <div class="box">this is a item-3</div>
+        <div class="box">this is a item-4</div>
+        <div class="box">this is a item-5</div>
+        <div class="box">this is a item-6</div>
+        <div class="box">this is a item-7</div>
+        <div class="box">this is a item-8</div>
+        <div class="box">this is a item-9</div>
+        <div class="box">this is a new-1</div>
+        <div class="box">this is a new-2</div>
+        <div class="box">this is a new-3</div>
+        <div class="box">this is a new-4</div>
+        <div class="box">this is a new-5</div>
+        <div class="box">this is a new-6</div>
+        <div class="box">this is a new-7</div>
+        <div class="box">this is a new-8</div>
+        <div class="box">this is a new-9</div>
+        <div class="box">this is a new-10</div>
+        <div class="box">this is a new-10</div>
+        <div class="box">this is a new-10</div>
+        <div class="box">this is a new-10</div>
+        <div class="box">this is a new-10</div>
+        <div class="box">this is a new-10</div>
+        <div class="box">this is a new-10</div>
+    </div>
+</body>
+
+</html>

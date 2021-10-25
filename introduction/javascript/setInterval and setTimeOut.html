@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> setInterval & setTimeOut </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <style>
+        * {
+            background-color: black;
+        }
+
+        #para {
+            color: white;
+            text-align: center;
+            font-size: 34px;
+            font-family: 'Zen Dots', cursive;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="para"></p>
+    </div>
+    <script>
+        // document.getElementById('para').innerHTML = '<p>this is a tutorial 58</p>';
+
+
+        function greeting(name, say) {
+            console.log("Hello Good Morning" + "\t" + name + "\t" + say);
+        }
+
+        //setTimeout function syntax: setTimeout(function , delay timeout, and here arugument for function)
+        timeout = setTimeout(greeting, 2000, 'ermapsh', " Take Care");// here only write fuction name , not function calling, u can use tiemout anything
+        console.log("Timeout id:",timeout);//uniqe id 
+        clearTimeout(2);//setTimeout have uniqe id using that we can stop that , beacause we don't want
+
+        // setInterval
+        interval_time = setInterval(greeting, 2000, "xmapsh", 'dude');
+        console.log("interval_time:",interval_time);//even setInterval has uniqe id
+        clearInterval(3)//setTimeout have uniqe id using that we can stop , beacause we don't want
+
+
+
+        // we can use live time display on website
+        function display_time() {
+            time = new Date();
+            object_to_string = String(time);
+            // console.log(object_to_string.slice(0, 33));
+            document.getElementById('para').innerHTML = object_to_string.slice(0, 33);
+        }
+
+        setInterval(display_time, 1000);
+
+
+    </script>
+</body>
+
+</html>

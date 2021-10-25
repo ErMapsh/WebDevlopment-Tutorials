@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Variables & Custom Properties</title>
+    <style>
+        :root{
+            --font-family: 'Courier New', Courier, monospace;
+            --font-second: Arial, Helvetica, sans-serif;
+            /* in root variable access any scope */
+
+            --max-width: 399px;
+        }
+        #container {
+            width: var(--max-width);
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            --container-bgcolor: rgba(206, 15, 133, 0.555);
+            background-color: var(--container-bgcolor);
+        }
+
+        .box {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            margin: 2px 9px;
+            --box-color: tomato;
+            --box-shadow: rgb(66, 66, 66);
+            border: 3px solid black;
+            background-color: var(--box-color);
+            box-shadow: 4px 14px var(--box-shadow);
+
+
+            /* this way we make a variable in css and use, but scope of variable has limited to its own scope
+            if we wanna variable access in any scope then u write :root{} scope in style shit and write variable in it   */
+            font-family: var(--font-family);
+            text-align: center;
+            
+ 
+        }
+
+        #box3{
+            font-family: var(--font-second);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box">this is a first box</div>
+        <div class="box">this is second box</div>
+        <div class="box" id="box3">this is third box</div>
+    </div>
+</body>
+
+</html>

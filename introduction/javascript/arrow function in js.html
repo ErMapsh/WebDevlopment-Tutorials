@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow funcion in js</title>
+</head>
+
+<body>
+    <div class="container">
+        <p id="para">this is arrow function tutorial.</p>
+    </div>
+
+
+    <script>
+        // we write function like this
+        function causual() {
+            console.log("Welcome boiis");
+        };
+        causual();
+
+    //but we write in shortcut:
+        // let newThing = () =>{
+        //     console.log('Welcome back again..');
+        // };
+        let newThing = () => console.log('Welcome back again..');
+        newThing();
+
+        //we can also use like this, we dont need fuction call to this case
+        // setInterval(() => {
+        //     console.log('you are awesome')
+        // }, 4000);   
+ 
+        let sum = (a, b) => a + b;
+
+        let half = a => a / 2;
+
+
+        //let create a object = i.e
+        let obj1 = {
+            greeting: 'good morning',
+            name: ["ermapsh", "ErMapsh", "Xmapsh", "xmapsh"],
+            speak(){
+                this.name.forEach(student => {
+                    console.log(student, this.greeting);
+                    // console.log(student)
+                });
+            }
+        }
+
+        obj1.speak();
+
+    </script>
+</body>
+
+</html>

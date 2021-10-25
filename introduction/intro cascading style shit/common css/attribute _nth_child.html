@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Attribute & nth child pseudo Selectors</title>
+</head>
+<style>
+    .container {
+        width: 200px;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        background-color: black;
+    }
+
+    input {
+        margin: 14px 14px;
+    }
+
+    /* this is attribute selecter  */
+    input[type='text'] {
+        border: 3px red solid;
+    }
+
+    input[type='email'] {
+        border: 3px blue dotted;
+    }
+
+    a[target='_blank'] {
+        color: yellow;
+        font-size: 3rem;
+        text-decoration: none;
+    }
+
+    input[type='submit'] {
+        border: 2px black solid;
+        font-size: 2em;
+        background-color: grey;
+        cursor: pointer;
+    }
+
+    /* this is nth child pseudo selector */
+    li{
+     color:white;
+    }
+    li:nth-child(3n+3) {
+        background-color: red;
+    }
+
+    li:nth-child(even){
+        color: orange;
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <h1><a href="http://www.google.com" target="_blank">Google</a></h1>
+        <h1><a href="http://www.Facebook.com" target="_self">Facebook</a></h1>
+        <input type="text" placeholder="Enter Your Username..">
+        <input type="email" placeholder="Enter Your Email">
+        <input type="submit" value="submit">
+        <li>this is a first</li>
+        <li>this is a second </li>
+        <li>this is a third</li>
+        <li>this is a fourth</li>
+        <li>this is a fifth</li>
+        <li>this is a sixth</li>
+        <li>this is a seventh</li>
+        <li>this is a eighth</li>
+        <li>this is a ninth</li>
+        <li>this is a tenth</li>
+    </div>
+
+
+</body>
+
+</html>

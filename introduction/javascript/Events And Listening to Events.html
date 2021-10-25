@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Listening to Events</title>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #main{
+            width: 699px;
+            margin: auto;
+            /* background-color: aqua; */
+            text-align: center;
+        }
+        
+        .container {
+            /* border: 3px solid black;
+            background-color: grey; */
+            width: 100%;
+            margin: auto;
+            padding: 13px;
+            text-align: center;
+        }
+
+        #butt {
+            margin: 13px;
+            padding: 8px 14px;
+            background-color: rgb(255, 0, 0);
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Browser Events:
+    click
+    context menu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    subimt
+    focus
+    DOMContentLoaded
+
+    transitionend -->
+
+    <div id="main">
+        <div class="container">
+            <h1>this is my heading</h1>
+            <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt obcaecati totam, rem aut repellendus exercitationem, dolorum sunt delectus eveniet in minus officia nisi minima non vitae numquam quam ipsa cum earum aliquam? Commodi aliquam, magni dolorum ut suscipit molestias accusamus possimus id repellat consequuntur necessitatibus nam, voluptates pariatur quia quibusdam repellendus? Accusantium deserunt sit quo recusandae natus laudantium cumque at illo suscipit neque voluptatibus voluptate quia ea, pariatur, dicta atque, earum delectus temporibus eum saepe corporis facere! Assumenda praesentium sapiente aspernatur iste, nihil iusto blanditiis velit hic sit illum, facere in nesciunt facilis nulla expedita qui tenetur mollitia ad, error necessitatibus vitae alias. Similique corporis quae tenetur id dolorum aliquid fuga, numquam facere deleniti maxime illo temporibus, laborum veritatis officiis iste excepturi error! Saepe, autem!</p>
+
+        </div>
+        <button id="butt" onclick="toggleHide()">show/hide</button>
+    </div>
+
+
+
+
+
+    <script>
+        // let para = document.getElementById('para');
+        // para.addEventListener('mouseover', function run(){
+        //     alert('mouse inside the paragraph');
+        // });
+        // para.addEventListener('mouseout', function run(){
+        //     alert('mouse outside the paragraph');
+        // });
+
+
+
+    function toggleHide(){
+
+        let butt = document.getElementById('butt');
+        // let para = document.getElementById('para');//directly get new mordern id or class
+        if (para.style.display != 'none'){
+            alert("NOthing  there ")
+            para.style.display = 'none';
+        }
+        else{
+            para.style.display = 'block';
+            alert("something there")
+        }
+        
+    }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in js</title>
+</head>
+
+<body>
+    <div class="contain" id="box"><div>
+
+        </div>
+        <script>
+            var name = 'ErMapsh\t';
+            var proffesion = 'Engineer\t';
+            var about = 'ErMapsh is going to achieve something';
+
+            console.log(name + proffesion + about);
+            console.log(`Name of the student is ${name} and his proffession is ${proffesion} , ${about}`);
+            console.log(`Length of name is ${name.length} `);
+            console.log(`this way we write \\n`);
+
+            // we can make string using also this way
+            var x = new String('this is a new way to make string');
+            console.log(x);
+
+            document.getElementById('box').innerHTML = '<h1>This is a heading using getElementId</h1>'
+        </script>
+</body>
+
+</html>

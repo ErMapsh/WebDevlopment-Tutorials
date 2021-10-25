@@ -1,0 +1,138 @@
+body::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background: url('https://source.unsplash.com/user/erondu/1600x900')no-repeat center center;
+    background-attachment: fixed;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.75;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: flexbox;
+}
+
+
+/*Navbar*/
+nav{
+    
+    display: flex;
+    background-color: rgb(54, 54, 54);
+}
+nav ul{
+    list-style: none;
+    margin: auto;
+    width: 45%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+nav ul li {
+    padding: 12px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+
+
+/*section part*/
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#first-section{ 
+    display: flexbox;
+    width:55%;
+    margin: 14px auto;
+    border: 3px solid rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.568);
+    font-weight: bolder;
+    border-radius: 11px;
+    color: rgb(255, 255, 255);
+    padding: 13px;
+
+}
+
+#first-section ul{
+    padding: 0px;
+}
+
+#first-section ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 2rem;
+    z-index: -1;
+}
+
+/*Form as second-section*/
+#second-section{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2{
+    width: 66%;
+    margin: auto;
+    font-size: 1.4rem;
+    padding:14px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+form{
+    background-color: rgba(0, 0, 0, 0.815);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 14px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+input{
+  
+    margin: 13px;
+    padding: 8px;
+    width: 92%;
+    text-align: center;
+    justify-content: center;
+    outline: none;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#butt{
+    display: block;
+    margin: auto;
+    width:150px;
+    height: 35px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(95, 95, 95);
+    color: white;
+    
+}
+#butt:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}

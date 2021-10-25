@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Form and input tutorial</title>
+</head>
+
+<body>
+    <h3>This is form and input tutorial</h3>
+    <form action="backend.php">
+        <!-- here action is nothing but your input data are store in *.php file -->
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myname" id="name">
+        </div>
+
+        <div>
+            <label for="role">Role:</label>
+            <input type="text" name="myrole" id="role">
+        </div>
+
+        <div>
+            <label for="emailid"> Email: </label>
+           <input type="email" name="myemail" id="emailid">
+        </div>
+
+        <div>
+            <label for="birth">Your Birthdate:</label>
+            <input type="date" name="Date" id="birth">
+        </div>
+
+        <div>
+            <label for="no"> Enter Amount:</label>
+           <input type="number" name="number" id="no">
+        </div>
+
+        <div>
+            <label for="textarea">Give Feedback:</label><br>
+            <!-- here you can decide the text-area box size using rows and cols  -->
+            <textarea name="Text-area:" rows="10px" cols="100px" id="textarea"></textarea>   
+        </div>
+
+        <div>
+            <input type="checkbox" name="myeligibity" id="checkbox">
+            <label for="checkbox">Accept The Term and conditon</label>
+            
+        </div>
+
+        <div>
+            <label for="feedback">Choose color:</label>
+            <input type="color" name="color choose" id="feedback">
+        </div>
+
+        <div>
+            <label for="gender">Gender:</label><br>
+             <input type="radio" name="radiobutton" id="gender">Male<input type="radio" name="radiobutton" id="gender">Female
+        </div>
+
+        <div>
+            <!-- <label for="textarea">Give Feedback:</label><br> -->
+            <input type="submit" value="Submit Now" id="textarea">
+            
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>

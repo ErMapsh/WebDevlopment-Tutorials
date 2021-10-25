@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media qurries</title>
+    <style>
+        .box{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            display: none;
+        }
+        @media  (max-width: 300px){
+           #box-1{
+               display: block;
+               background-color: rgb(134, 151, 34);
+           }    
+        }
+        @media  (min-width: 300px) and (max-width: 600px) {
+           #box-2{
+               display: block;
+               background-color: rgb(19, 170, 27);
+           }    
+        }
+        @media  (min-width: 600px) and (max-width: 900px){
+           #box-3{
+               display: block;
+               background-color: rgba(155, 41, 184, 0.986);
+           }    
+        }
+        @media  (min-width: 900px) {
+           #box-4{
+               display: block;
+               background-color: rgb(223, 99, 41);
+           }    
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="box" id="box-1">this is iphone</div>
+    <div class="box" id="box-2">this is tablet </div>
+    <div class="box" id="box-3">this is desktop computer</div>
+    <div class="box" id="box-4">this is widescreen</div>
+</body>
+</html>

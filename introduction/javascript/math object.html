@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math object</title>
+</head>
+<body>
+    <div class="container">
+        <p>this is a math object tutorial</p> 
+    </div>
+    <script>
+        //Printing the math object
+        let M = Math;
+        console.log(M);
+
+        //Printing The constant from Math Object 
+        console.log('The value of Math.E:', Math.E);
+        console.log('The value of Math.LN2:', Math.LN2);
+        console.log('The value of Math.LN10:', Math.LN10);
+        console.log('The value of Math.PI:', Math.PI);
+        console.log('The value of Math.SQRT1_2', Math.SQRT1_2);
+        
+        //Printing The function from Math Object 
+        let a = 3.334;
+        let b = 5.344;
+        console.log('the value of a and b is', a, 'and',b);
+        //round function means in decimal 
+        console.log('the value of a and b rounded is : ', Math.round(a),'&', Math.round(b) );
+
+        //power function 
+        console.log('the value of 4 raise to the power 2 is ', Math.pow(4,2));
+        console.log('the value of 3 raise to the power 3 is ', Math.pow(3,3));
+
+        //square root function
+        console.log('Square root of 49 is', Math.sqrt(49));
+        console.log('Square root of  225 is', Math.sqrt(225));
+
+        // ceil and floor
+        console.log('5.8 rounded up to nearest largest integer is', Math.ceil(5.8));
+        console.log('5.8 rounded down to nearest largest integer is', Math.floor(5.8));
+
+        //absolute function return only positive value
+        console.log('Absolute value of 5.6', Math.abs(5.6));
+        console.log('Absolute value of -5.6', Math.abs(-5.6));
+
+        //trignometric function
+        console.log('the value of sin(PI) is', Math.sin(Math.PI/2));    
+        console.log('the value of cos(PI) is', Math.cos(Math.PI/2));    
+        console.log('the value of tan(PI) is', Math.tan(Math.PI/2));    
+
+        //min max function 
+        console.log('minimum value in 3, 5, 2, 6 is', Math.min(3, 5, 2, 6));
+        console.log('maximum value in 3, 5, 2, 6 is', Math.max(3, 5, 2, 6));
+
+        //random no return no between 0 and 1
+        console.log('random no is', Math.random())
+            //how to generate no from to no 10 to 100 
+            let min = 10 ;
+            let max = 100;
+
+            console.log(min + (max -min)*Math.random())
+
+        </script>
+</body>
+</html>

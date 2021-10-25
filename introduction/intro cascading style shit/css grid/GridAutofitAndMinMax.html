@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Introduction & Creating A Basic Grid</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+        }
+        #container{
+            display: grid;
+            grid-gap: 2rem;
+            /* grid-template-columns: 33% 33% 33%; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(auto-fill, minmax(0px,300px) );
+            justify-content: center;
+            /* justify-content: space-evenly; */
+          
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+        
+            background-color: tomato;
+            border: 3px solid black;
+            }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box">this is a item-1</div>
+        <div class="box">this is a item-2</div>
+        <div class="box">this is a item-3</div>
+        <div class="box">this is a item-4</div>
+        <div class="box">this is a item-5</div>
+        <div class="box">this is a item-6</div>
+        <div class="box">this is a item-7</div>
+        <div class="box">this is a item-8</div>
+        <div class="box">this is a item-9</div>
+
+    </div>
+</body>
+
+</html>

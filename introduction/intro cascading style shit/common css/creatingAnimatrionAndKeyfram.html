@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Creating Animations & Keyframes</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #container {
+            display: flex;
+            background-color: rgb(235, 176, 166);
+        }
+
+        .box {
+
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            /* animation-name: myfirst; */
+            /* animation-name: mysecond;
+            position: relative;
+            animation-duration: 6s;
+            animation-iteration-count: infinite; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: alternate; */
+            /* animation-delay: 3s; */
+            /* animation-direction: alternate-reverse; */
+
+            /* all in one  */
+            /* animation: animation-name  animation-duration   animation-timing-function    animation-delay 
+            animation-iteration-count   animation-fill-mode; */
+            animation: mysecond 6s infinite;
+            position: relative;
+
+        }
+
+        @keyframes myfirst {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1200px;
+            }
+
+        }
+
+        @keyframes mysecond {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 0px;
+                left: 100px;
+
+            }
+
+            50% {
+                top: 100px;
+                left: 100px;
+            }
+
+            75% {
+                top: 100px;
+                left: 0px;
+
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

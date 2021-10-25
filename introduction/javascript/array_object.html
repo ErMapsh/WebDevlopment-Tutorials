@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array & object</title>
+</head>
+
+<body>
+    <h1>go to console</h1>
+
+    <script>
+        //differnt types of var
+        let myvar = 3;
+        let myvar2 = "ermapsh";
+        let myvar3 = true;
+        let myvar4 = null;
+        let myvar5 = undefined;
+
+        //Dictionary
+        let dictvar_object = {
+            name: 'ErMapsh',
+            proffestion: 'Er',
+            hobbies: 'gaming',
+            age: 21, 
+            "my games" : ["Pubg", "valorent"]
+
+        }
+        console.log(dictvar_object.name);
+        console.log(dictvar_object["my games"]);
+
+
+        //ARRAY- first method of make list object
+        // let listvar = [1, 3, 4, 2, 5];
+        // console.log(listvar);
+        // console.log(listvar[3]);
+
+        //also u can make object of list using 
+        // let listvar_object = new Array('ErMapsh is new version of Mahesh Mestri', 'he is Engineer');
+        // console.log(listvar_object)
+        // console.log(`lenght of this listvar_object is ${listvar.length}.`);
+        // console.log(`sorthing of the array: ${listvar.sort()}`);
+        // listvar.push('Purva Anil Panchal');
+        // console.log(listvar[5]);
+
+        // example
+        let newvar = new Array(33);//create 33 empty index
+        console.log(newvar);
+        console.log(`19th index value is undefind because is ${newvar[19]}`);
+        
+
+      
+    </script>
+</body>
+
+</html>

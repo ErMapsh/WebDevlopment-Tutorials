@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction - Alert, Prompt, Confirm</title>
+</head>
+
+<body>
+    <script>
+        //alert dosent return anything--------------
+        // alert('This is a alert message...');
+
+        //syntax: prompt('your question', 'input');--------------
+        // let name = prompt('what is your name?', 'name');
+        // console.log(name);
+
+        //confirm---------------------------------
+        // let deletepost = confirm('you do you want to resubmission?');
+        // console.log(deletepost);//confirm only return true or false
+        // if (deletepost == true) {
+        //     console.log('Your post has been resubmission successfully..');
+        // }
+        // else {
+        //     console.log('Your post has not been resubmission..');
+        // }
+
+
+        // assignment on this------------------------------
+        
+        // let question = prompt('Enter Your Age?', '');
+        // if (question>18){
+        //     alert('You are Eligible');
+        // }
+        // else{
+        //     alert("You are not Eligible..");
+        // }
+
+
+        let question2 = confirm("Are u 18+?")
+        if (question2 == true){
+            alert("You now proceed..")  
+        }
+        else{
+            alert("You are not able to proceed...")
+        }
+            
+
+     
+    </script>
+</body>
+
+</html>
