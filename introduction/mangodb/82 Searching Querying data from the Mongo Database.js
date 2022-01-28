@@ -3,7 +3,7 @@
 // db.collection_name.find()           here collection_name name is group of data in database
 // 1) if we want specific data from Mangodb then need to give specific key pair as argument or filter argument in find function ie.                   
 
-// db.data.find({"name":"Oppo"})    : this querry will return all objects with "name" equal to "oppo"
+// db.data.find({"name":"Oppo"})    : this querry will return for all objects with "name" equal to "oppo"
 
 // we create collection as smarthphone_info in ErMapsh :a information of mobile in json format for uploading or storing a data in Mangodb
 
