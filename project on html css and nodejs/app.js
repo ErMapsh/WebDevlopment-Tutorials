@@ -63,5 +63,5 @@ app.post('/contactus',(req, res)=>{
 })
 
 app.listen(port , ()=>{
-    console.log(`your page successfully run on port ${port}`)
+    console.log(`your page successfully run on port http://localhost:${port}`)
 })

@@ -1,4 +1,2 @@
-# ErMapsh-Website-
-
-
-this is website i did my practice in web development using html, css, js, node js, experss with database mangodb.
+![Homepage](/static/view/home.png)__
+![Contact](/static/view/Contact.png)__
