@@ -36,3 +36,4 @@ const  item = {
 }
 
 console.log(item["Name"])
+console.log(item.Name)
