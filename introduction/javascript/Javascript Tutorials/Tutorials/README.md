@@ -2,3 +2,6 @@
 
 ## we do that using following cmd --> 
     node filename.js
+
+## after 14quetions thing on replit
+- [https://replit.com/@ErMapsh?path=folder/JAVASCRIPT](https://replit.com/@ErMapsh?path=folder/JAVASCRIPT)
