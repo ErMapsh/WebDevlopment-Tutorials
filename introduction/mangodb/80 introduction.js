@@ -8,7 +8,8 @@
 
 // common cmd in use:
 //  0.db                               cmd show current working database in ps
-//  1.use [database name]  :           default database is test so if u need to change/create database then use this cmd with                 your database name , after switch database , u need just write db.
+//  1.use [database name]  :           default database is test so if u need to change/create database then use this cmd with                 
+//  your database name , after switch database , u need just write db.
 //  2.show dbs                         show all databases in our machine 
 //  3.show collections                 show all collections in choosen database 
 //  4.db.collection_name.find()        find data in collection & u can easily find data giving argument to find(). 
